@@ -13,7 +13,7 @@ class Client
 {
     private $id;
     private $nome;
-    private $cpf;
+    private $cpf_cnpj;
     private $endereco;
     private $pessoa;
     private $importancia;
@@ -26,10 +26,10 @@ class Client
      * @param $endereco
      * @param $pessoa
      */
-    public function __construct($id, $nome, $cpf, $endereco, $pessoa,$importancia){
+    public function __construct($id, $nome, $cpf_cnpj, $endereco, $pessoa,$importancia){
         $this->id = $id;
         $this->nome = $nome;
-        $this->cpf = $cpf;
+        $this->cpf_cnpj = $cpf_cnpj;
         $this->endereco = $endereco;
         $this->pessoa = $pessoa;
         $this->importancia = $importancia;
@@ -78,14 +78,14 @@ class Client
         return $this;
     }
 
-    public function getCpf()
+    public function getCpfCnpj()
     {
-        return $this->cpf;
+        return $this->cpf_cnpj;
     }
 
-    public function setCpf($cpf)
+    public function setCpfCnpj($cpf_cnpj)
     {
-        $this->cpf = $cpf;
+        $this->cpf_cnpj = $cpf_cnpj;
         return $this;
     }
 
