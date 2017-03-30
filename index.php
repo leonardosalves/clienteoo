@@ -5,15 +5,11 @@
  * Date: 28/03/2017
  * Time: 18:08
  */
-/**
- * # Autoload
+# Autoload
 define('CLASS_DIR', 'src/');
 set_include_path(get_include_path().PATH_SEPARATOR.CLASS_DIR);
 spl_autoload_register();
-$objClientes = new \src\Client();//Exemplo do instanciamento do objeto
- */
 
-require_once "Client.php";
 //Pessoa Física
 $clientes[1] = array("name" => "Paulo","cpf_cnpj" => 19846515581,"endereco" => "Rua dghdsgr","pessoa" => "fisica","importancia" => "3");
 $clientes[2] = array("name" => "João Baptista","cpf_cnpj" => 9874654845,"endereco" => "Rua sdfsafe","pessoa" => "fisica","importancia" => "4");
@@ -34,7 +30,7 @@ $clientes[15] = array("name" => "Saleiro do Paulo","cpf_cnpj" => 25488794648,"en
 
 $cliente = array();
 foreach ($clientes as $id => $valor) {
-    @$cliente[$id] = new Client($id, $valor['name'], $valor['cpf'], $valor['endereco'],$valor['pessoa'],$valor['importancia']);
+    @$cliente[$id] = new \src\Client($id, $valor['name'], $valor['cpf'], $valor['endereco'],$valor['pessoa'],$valor['importancia']);
 }
 ?>
 <!DOCTYPE HTML>

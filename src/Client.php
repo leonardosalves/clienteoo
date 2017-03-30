@@ -7,7 +7,7 @@
  * Time: 18:09
  */
 
-
+namespace src;
 
 class Client
 {
