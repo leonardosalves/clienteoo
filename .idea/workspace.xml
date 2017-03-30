@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="aceb3623-118d-4d3d-bd10-69d89bd0a819" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Client.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
+=======
+    <list default="true" id="aceb3623-118d-4d3d-bd10-69d89bd0a819" name="Default" comment="" />
+>>>>>>> Stashed changes
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -244,12 +248,20 @@
       <workItem from="1490735318423" duration="12502000" />
       <workItem from="1490812412263" duration="9916000" />
       <workItem from="1490882747869" duration="8923000" />
+<<<<<<< Updated upstream
       <workItem from="1490897612430" duration="187000" />
+=======
+      <workItem from="1490897612430" duration="1220000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="31528000" />
+=======
+    <option name="totallyTimeSpent" value="32561000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-169" width="1936" height="1096" extended-state="6" />
