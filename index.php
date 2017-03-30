@@ -30,7 +30,7 @@ $clientes[15] = array("name" => "Saleiro do Paulo","cpf_cnpj" => 25488794648,"en
 
 $cliente = array();
 foreach ($clientes as $id => $valor) {
-    @$cliente[$id] = new \src\Client($id, $valor['name'], $valor['cpf'], $valor['endereco'],$valor['pessoa'],$valor['importancia']);
+    @$cliente[$id] = new \src\Client($id, $valor['name'], $valor['cpf_cnpj'], $valor['endereco'],$valor['pessoa'],$valor['importancia']);
 }
 ?>
 <!DOCTYPE HTML>
@@ -72,7 +72,7 @@ foreach ($clientes as $id => $valor) {
                         <a href="?id=<?php echo $value->getId();?>&order=<?php echo @$_GET['order']?>" class="ancor" ><?php  echo $value->getNome();?></a>
                         <?php
                         if(@$_GET['id'] == $value->getId()){ ?>
-                            &nbsp&nbsp&nbsp<span class="label label-warning" style="position: relative;bottom: 2px"><?php echo "CPF: ".$value->getCpf();?></span>
+                            &nbsp&nbsp&nbsp<span class="label label-warning" style="position: relative;bottom: 2px"><?php echo $cpf_cnpj = ($value->getPessoa() == "fisica") ? "CPF: " : "CNPJ: "; echo $value->getCpfCnpj();?></span>
                             <span class="label label-warning" style="position: relative;bottom: 2px"><?php echo "Endereço: ".$value->getEndereco();?></span>
                         <?php }?>
                     </td>
